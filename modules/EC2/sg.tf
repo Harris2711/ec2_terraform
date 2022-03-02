@@ -1,5 +1,4 @@
-resource "aws_security_group" "new_sg" {
-  name        = "new_sg"
+resource "aws_security_group" "sg" {
   description = "Allow TLS inbound traffic"
   vpc_id      = var.vpc_id
 
@@ -27,6 +26,6 @@ resource "aws_security_group" "new_sg" {
   }
 
   tags = {
-    Name = "new_sg"
+    Name = "sg"
   }
 }
