@@ -9,7 +9,7 @@ module "ec2_instance" {
   instance_type          = var.instance_type
   key_name               = "miakhalifa"
   monitoring             = true
-  vpc_security_group_ids = [aws_security_group.g.id]
+  vpc_security_group_ids = [aws_security_group.sg.id]
   subnet_id              = var.subnet_id
 
   user_data = <<-EOF
