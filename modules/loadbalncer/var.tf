@@ -8,7 +8,7 @@ variable "subnet-lb_id" {
 }
 
 variable "arn" {
-    default="mention your arn"
+    default="mention your target group arn"
 }
 
 variable "lb_arn" {
