@@ -7,7 +7,7 @@ module "ec2_instance" {
   ami                    = var.ami_vpc
   associate_public_ip_address= true
   instance_type          = var.instance_type
-  key_name               = "miakhalifa"
+  key_name               = "keypair"
   monitoring             = true
   vpc_security_group_ids = [aws_security_group.sg.id]
   subnet_id              = var.subnet_id
