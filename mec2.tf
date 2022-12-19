@@ -6,13 +6,13 @@
 
 #   name = "instance-${each.key}"
 
-#   ami                    = "ami-08ee6644906ff4d6c"
+#   ami                    = "mention ami id"
 #   associate_public_ip_address= true
-#   instance_type          = "t2.micro"
-#   key_name               = "miakhalifa"
+#   instance_type          = "mention instance id "
+#   key_name               = "keypair"
 #   monitoring             = true
-#   vpc_security_group_ids = ["sg-026e35b419359a40d"]
-#   subnet_id              = "subnet-078387f27e885f97f"
+#   vpc_security_group_ids = ["mention sg"]
+#   subnet_id              = "mention subnet-id"
 
 #   tags = {
 #     Name= "New"
