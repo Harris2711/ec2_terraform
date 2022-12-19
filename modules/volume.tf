@@ -1,5 +1,5 @@
 resource "aws_ebs_volume" "example" {
-  availability_zone = "ap-south-1a"
+  availability_zone = "region"
   size              = 40
 
   tags = {
@@ -17,6 +17,6 @@ resource "aws_ebs_snapshot" "example_snapshot" {
 
 resource "aws_volume_attachment" "ebs_att" {
   device_name = "/dev/sdf"
-  volume_id   = "vol-0fdb90e3e19260cf8"
-  instance_id = "i-0274536fd4a625e39"
+  volume_id   = "mention vol -id"
+  instance_id = "mention instance id "
 }
